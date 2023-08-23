@@ -1,6 +1,6 @@
 require 'redmine'
 
-require 'redmine_drafts/hooks'
+require_relative './lib/redmine_drafts/hooks'
 
 ActiveSupport::Reloader.to_prepare do
   require_dependency 'redmine_drafts/issue_patch'

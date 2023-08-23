@@ -1,5 +1,10 @@
 require_dependency 'issue'
 
+module RedmineDrafts
+  module IssuePatch
+  end
+end
+
 class Issue < ActiveRecord::Base
 
   has_many :drafts, :as => :element

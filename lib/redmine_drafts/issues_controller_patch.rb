@@ -1,5 +1,10 @@
 require_dependency 'issues_controller'
 
+module RedmineDrafts
+  module IssuesControllerPatch
+  end
+end
+
 class IssuesController
   prepend_before_action :set_draft
 
